@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+}
+#header {
+    display: block;
+    /* position: fixed; */
+    width: 100%;
+    background-color: black;
+    color: teal;
+}
+.containers {
+    height: 1360px;
+    width: 100%;
+}
+#main-container {
+    display: inline-block;
+    background: black;
+}
+.item1 { grid-area: t-gap;}
+.item2 { grid-area: Rgap;}
+.item3 { grid-area: pic-1;
+    background-image: url('images/shoes.png');
+}
+.item4 { grid-area: Lgap;}
+.item5 { grid-area: txt-1;}
+.item6 { grid-area: spc-2;}
+.item7 { grid-area: pic-2;
+    background-image: url('images/shoes.png');
+}
+.item8 { grid-area: txt-2;}
+.item9 { grid-area: spc-3;}
+.item10 { grid-area: pic-3;
+    background-image: url('images/shoes.png');
+}
+.item11 { grid-area: txt-3;}
+.item12 { grid-area: spc-4;}
+.item13 { grid-area: pic-4;
+    background-image: url('images/shoes.png');
+}
+.item14 { grid-area: txt-4;}
+.item15 { grid-area: pic-5;
+    background-image: url('images/shoes.png');
+}
+.item16 { grid-area: txt-5;}
+.item17 { grid-area: spc-6;}
+.item18 { grid-area: pic-6;
+    background-image: url('images/shoes.png');
+}
+.item19 { grid-area: txt-6;}
+.item20 { grid-area: spc-7;}
+.item21 { grid-area: pic-7;
+    background-image: url('images/shoes.png');
+}
+.item22 { grid-area: txt-7;}
+.item23 { grid-area: spc-8;}
+.item24 { grid-area: pic-8;
+    background-image: url('images/shoes.png');
+}
+.item25 { grid-area: txt-8;}
+.item26 { grid-area: pic-9;
+    background-image: url('images/shoes.png');
+}
+.item27 { grid-area: txt-9;}
+.item28 { grid-area: b-gap;}
+
+.item {
+    border: 3px solid  black;
+    border-radius: 10px;
+}
+#grid-container {
+    float: left;
+    display: grid;
+    grid-template-rows: 0px auto auto auto auto auto auto auto auto auto 0px;
+    grid-template-columns: 15px 85px 85px 85px 85px auto auto auto 15px;
+    grid-template-areas: 
+    't-gap t-gap t-gap t-gap t-gap t-gap t-gap t-gap t-gap'
+    'Rgap pic-1 pic-1 txt-1 txt-1 txt-1 txt-1 txt-1 Lgap'
+    'Rgap spc-2 pic-2 pic-2 txt-2 txt-2 txt-2 txt-2 Lgap'
+    'Rgap spc-3 spc-3 pic-3 pic-3 txt-3 txt-3 txt-3 Lgap'
+    'Rgap spc-4 pic-4 pic-4 txt-4 txt-4 txt-4 txt-4 Lgap'
+    'Rgap pic-5 pic-5 txt-5 txt-5 txt-5 txt-5 txt-5 Lgap'
+    'Rgap spc-6 pic-6 pic-6 txt-6 txt-6 txt-6 txt-6 Lgap'
+    'Rgap spc-7 spc-7 pic-7 pic-7 txt-7 txt-7 txt-7 Lgap'
+    'Rgap spc-8 pic-8 pic-8 txt-8 txt-8 txt-8 txt-8 Lgap'
+    'Rgap pic-9 pic-9 txt-9 txt-9 txt-9 txt-9 txt-9 Lgap'
+    'b-gap b-gap b-gap b-gap b-gap b-gap b-gap b-gap b-gap';
+    row-gap: 10px;
+    width: 50%;
+    /* background:#a60303; */
+    background-color: teal;
+    color: teal;
+    border-right: 2px solid black;
+    border-radius: 10px;
+}
+#picture-container {
+    display: inline-block;
+    background-image: url('images/lake.jpg');
+    width: 50%;
+    border: thin;
+    border-radius: 10px;
+}
+@mdeia 
