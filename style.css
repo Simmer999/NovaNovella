@@ -23,11 +23,11 @@ body {
                 /* text-align: center; */
                 margin-left: 30px;
             }
-            #hidden-header {
+            /* #hidden-header {
                 height: 16px;
                 width: 100%;
-                display: inline-block;
-            }
+                display: inline-block; 
+            }*/
             footer {
                 display: block;
                 background-color: black;
