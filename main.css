@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+}
+body {
+    background-color: black;
+    height: 100vh;
+}
+#header {
+    background-color: black;
+}
+#title {
+    color: teal;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.main_book_container {
+    display: block;
+    width: 90%;
+    height: 80vh;
+    margin: 50px auto auto auto;
+    background-color: #bbb;
+    border: 2px solid #ff9000;
+    border-radius: 15px;
+    overflow: auto;
+}
+.book_title {
+    display: block;
+    padding-left: 10px;
+    border-bottom: 1px solid black;
+}
+.chapter {
+    border-bottom: 1px solid black;
+}
+.section1 .section2 .section3 .section4 {
+    height: 50px;
+    overflow: auto;
+}
+h2 {
+    font-size: 1.2em;
+}
+h3 {    
+    padding-left:  5px;
+    font-size: 1.0em;
+    display: inline;
+}
+h4 {
+    color: teal;   
+}
+.chapter-text {
+    height: 250px;    
+}
+
+
+
+
+
+
+#expand {
+    height: 0px;
+    overflow: auto;
+    transition: height 0.5s;
+    color: #FFF;
+  }
+
+#toggle:checked ~ #expand {
+height: 250px;
+}
+#toggle:checked ~ label::before {
+content: "";
+}
+.section1 {
+    height: 250px;
+}
+
+.part-a {
+    height: 250px;
+    overflow: auto;
+}
+.part-b {
+    height: 250px;
+    overflow: hidden;
+}
