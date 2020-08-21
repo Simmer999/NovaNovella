@@ -11,17 +11,26 @@ function slideOutLeft() {
 
 // The following function adds new text to the text already in the section.
 
-function add() {
-    var x = document.getElementById("test").value;
-    console.log(x);
-    var y = document.getElementById("Mike").value;
-    console.log(y);
-    var z =  y += x;
-    console.log(z);
-    document.getElementById("Mike").value = z;
-    console.log(document.getElementById("Mike").value);
+function add_1a() {
+  var x = document.getElementById("test").value;
+  console.log(x);
+  var y = document.getElementById("Mike").value;
+  console.log(y);
+  var z =  y += x;
+  console.log(z);
+  document.getElementById("Mike").value = z;
+  console.log(document.getElementById("Mike").value);
 };
-
+function add_1b() {
+  var x = document.getElementById("test").value;
+  console.log(x);
+  var y = document.getElementById("Mike").value;
+  console.log(y);
+  var z =  y += x;
+  console.log(z);
+  document.getElementById("Mike").value = z;
+  console.log(document.getElementById("Mike").value);
+};
 // document.getElementById("Mike").innerHTML =
 // The following function pushes the text to localStorage.
 
