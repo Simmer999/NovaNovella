@@ -114,7 +114,9 @@ h4 {
 .chapter-text {
     height: 250px;    
 }
-
+#msg {
+    height: 0;
+}
 
 
 /* #toggle1:checked ~ label::before {

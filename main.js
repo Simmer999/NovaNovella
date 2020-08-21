@@ -1,4 +1,4 @@
-
+// the following function exchanges the write and read containers.
 
 function slideOutLeft() {
     var writeContainer = document.getElementById("main-book-container");
@@ -13,12 +13,16 @@ function slideOutLeft() {
 
 function add() {
     var x = document.getElementById("test").value;
+    console.log(x);
     var y = document.getElementById("Mike").value;
-    document.getElementById("Mike").innerHTML = y += x;
+    console.log(y);
+    var z =  y += x;
+    console.log(z);
+    document.getElementById("Mike").value = z;
     console.log(document.getElementById("Mike").value);
 };
 
-
+// document.getElementById("Mike").innerHTML =
 // The following function pushes the text to localStorage.
 
 let texts = [];
@@ -48,13 +52,13 @@ document.addEventListener("DOMContentLoaded", ()=> {
 
 function getInfo() {
   var heidegger = localStorage.getItem("myTextList");
-  console.log(heidegger);
+  // console.log(heidegger);
   var sartre = JSON.parse(heidegger);
-  console.log(sartre[0].name);
+  // console.log(sartre[0].name);
   var mike = document.getElementById("Mike").value;
-  console.log(mike);
+  // console.log(mike);
   var susan = document.getElementById("Mike").value = mike + sartre[0].name;
-  console.log(susan);
+  // console.log(susan);
 }
 getInfo()
 
