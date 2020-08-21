@@ -31,18 +31,17 @@ function add_1b() {
   document.getElementById("Mike").value = z;
   console.log(document.getElementById("Mike").value);
 };
-// document.getElementById("Mike").innerHTML =
+
+
 // The following function pushes the text to localStorage.
 
 let texts = [];
-
 const addText = (ev) => {
     ev.preventDefault();
     let text = {
         id: Date.now(),
         name: document.getElementById("Mike").value
     }
-
   texts.push(text);
   document.querySelector("form").reset();
   console.warn("added", {texts});
@@ -55,6 +54,7 @@ const addText = (ev) => {
 document.addEventListener("DOMContentLoaded", ()=> {
   document.getElementById("btn").addEventListener("click", addText)
 });
+
 
 
 // The following function combines what is in "Mike" with what is in localStorage.

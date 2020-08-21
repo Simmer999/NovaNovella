@@ -116,6 +116,7 @@ h4 {
 }
 #msg {
     height: 0;
+    display: none;
 }
 
 
