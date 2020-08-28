@@ -34,12 +34,23 @@ button {
 }
 #writeBtn {
     float: left;
+    opacity: 1;
+    transition-duration: 1000ms; 
+}
+#writeBtn.writeBtn-alt {
+    opacity: 0;
 }
 #readBtn {
     float: right;
+    box-shadow: none;
+    /* transition-duration: 1000ms;  */
 }
 
 
+/* The '#main-book-container' transitions into '.main-boo'. 
+It is interesting that '.main-boo' is not in the html file.
+It is also interesting that '#main-book-container' is an Id 
+whereas '.main-boo' is a class.*/
 #main-book-container {
     display: block;
     width: 90%;
@@ -62,6 +73,11 @@ button {
     overflow: auto;
     transform: translate(-2000px);
 } 
+
+/* The '#readBook' transitions into '#readBook.main-rea'. 
+It is interesting that '#readBook.main-rea' is not in the html file.
+It is also interesting that whereas '.main-boo' above is listd by 
+itself, 'main-res' below is listed as a subset of '#readbook'.*/
 #readBook {
     visibility: hidden;
     display: block;
@@ -77,29 +93,6 @@ button {
     overflow: auto;
     transition-duration: 1000ms;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #readBook.main-rea {
     visibility: visible;
     display: block;
@@ -112,6 +105,29 @@ button {
     overflow: auto;
     transform: translateY(-900px);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .book_title {

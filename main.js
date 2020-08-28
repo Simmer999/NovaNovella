@@ -1,12 +1,14 @@
-// the following function exchanges the write and read containers.
+// The following function exchanges the write and read containers.
 
 function slideOutLeft() {
     var writeContainer = document.getElementById("main-book-container");
     writeContainer.classList.toggle("main-boo");
     var readContainer = document.getElementById("readBook");
     readContainer.classList.toggle("main-rea");
+    var writeBtn = document.getElementById('writeBtn');
+    writeBtn.classList.toggle('writeBtn-alt');
 };
-
+console.log('Got it.');
   
 
 // The following function adds new text to the text already in the section.
